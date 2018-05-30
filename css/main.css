@@ -97,4 +97,14 @@ p.caption{
 	background-position-x: 80% !important;
 }
 
+#swipe-prompt{
+	opacity: 0.6;
+}
+
+@media (min-width: 600px) {
+
+	.mobile-only{
+		display: none;
+	}
+}
 

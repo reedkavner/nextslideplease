@@ -1,24 +1,36 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Next Slide Please - A PowerPoint Comedy Show</title>
-		<link rel="stylesheet" href="css/main.css">
-		
-	</head>
-	<body class="nsp-bg">
-		<header onclick="iframeFocus()">
-			<div class="container">
-			Next Show: June 24th 7:30 at Pine Box Rock Shop
-			</div>
-		</header>
-		<iframe id="presentation" src="presentation.html"></iframe>
-	</body>
-	<script type="text/javascript">
-		function iframeFocus(){
-			document.getElementById("presentation").focus();
-		}
-		iframeFocus();		
-	</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Next Slide Please - A PowerPoint Comedy Show</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120126620-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120126620-1');
+    </script>
+</head>
+
+<body class="nsp-bg">
+    <header onclick="iframeFocus()">
+        <div class="container">
+            Next Show: June 24th 7:30 at Pine Box Rock Shop
+        </div>
+    </header>
+    <iframe id="presentation" src="presentation.html"></iframe>
+</body>
+<script type="text/javascript">
+function iframeFocus() {
+    document.getElementById("presentation").focus();
+}
+iframeFocus();
+</script>
+
 </html>

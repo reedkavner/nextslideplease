@@ -28,6 +28,10 @@ header{
 	overflow: hidden;
 }
 
+body.no-header header{
+	display: none;
+}
+
 header .container{
 	width: 100%;
 	height: 100%;
@@ -43,6 +47,10 @@ iframe#presentation{
 	border: 0px;
 	line-height: 0px;
 	display: block;
+}
+
+body.no-header iframe#presentation{
+	height: 100vh;
 }
 
 
@@ -83,6 +91,10 @@ p.caption{
 
 .jordan-pic .slide-background{
 	background-position-x: 90% !important;
+}
+
+.ziwe-pic .slide-background{
+	background-position-x: 75% !important;
 }
 
 .max-pic .slide-background{

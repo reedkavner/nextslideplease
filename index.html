@@ -25,8 +25,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link href="/static/css/main.css" rel="stylesheet">
-    <link href="/static/css/selectize.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -43,7 +42,7 @@
 </head>
 
 <body class="nsp-bg">
-    <a href="#" onclick="showMailingPopUp(); return false;">
+    <a href="#" onclick="McPopUp(); return false;">
         <header onclick="iframeFocus()">
             <div class="container">
                 Next Show: Monday 10/14 · 9:00 · Pine Box Rock Shop ·&nbsp;Get Updates
@@ -59,20 +58,18 @@ function iframeFocus() {
 iframeFocus();
 </script>
 
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-<script>
-function showMailingPopUp() {
-    require(
-        ["mojo/signup-forms/Loader"],
-        function(L) {
-            L.start({ "baseUrl": "mc.us16.list-manage.com", "uuid": "1cd3c0ba2b8c905a892e6fe9f", "lid": "ba9e490552" })
-        }
-    );
 
-    document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-    document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-}
-</script>
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+        <script type="text/javascript">
+            function McPopUp() {
+                require(['mojo/signup-forms/Loader'], function(L) {
+document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+                    document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+L.start({baseUrl: 'mc.us3.list-manage.com', uuid: '1cd3c0ba2b8c905a892e6fe9f', lid: 'ba9e490552'});
+                });
+            };
+        </script>
 
 
 </html>

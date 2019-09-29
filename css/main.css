@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i,800,800i&display=swap');
 
 /*
 R: #ff5c72
@@ -11,7 +11,7 @@ K: #000000
 body, html{
 	margin: 0;
 	border: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 .nsp-bg{
@@ -30,7 +30,7 @@ header{
 	height: 10vh;
 	background-color: #99fde9;
 	color: #081a21;
-	font-size: calc(10px + 1vw);
+	font-size: calc(10px + 1vh);
 	text-align: center;
 	display: table;
 	overflow: hidden;
@@ -74,6 +74,20 @@ body.no-header iframe#presentation{
 
 a{
 	color: #00b8e4 !important;
+}
+
+#tagline{
+	font-weight: 800;
+	font-style: italic;
+}
+
+#swipe-prompt{
+	margin-top: 10vh;
+	color: rgba(256, 256, 256, .7);
+}
+
+section{
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 .photo-caption-wrapper{

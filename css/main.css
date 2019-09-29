@@ -161,6 +161,9 @@ p.caption{
 }
 
 @media (min-width: 600px) {
+	header{
+		font-size: calc(10px + 1vw);
+	}
 
 	.mobile-only{
 		display: none;

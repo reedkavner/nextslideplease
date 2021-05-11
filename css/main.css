@@ -105,12 +105,13 @@ section{
 }
 
 .bg-image section{
-	padding: 20px !important;
 	background-color: rgba(0,0,0, .4);
+	padding: 20px !important;
+	margin: -20px !important;
 }
 
 .bg-image *{
-	text-shadow: 4px 2px 2px rgba(0,0,0, .3) !important;
+	text-shadow: 4px 2px 8px rgba(0,0,0, .3) !important;
 }
 
 p.caption{
@@ -133,8 +134,8 @@ p.caption{
 	background-position-x: 80% !important;
 }
 
-.curtis-pic .slide-background{
-	background-position-x: 80% !important;
+.miel-pic .slide-background{
+	background-position-x: 85% !important;
 }
 
 
